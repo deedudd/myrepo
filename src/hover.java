@@ -1,4 +1,4 @@
-package practice;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -6,15 +6,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
+//import org.openqa.selenium.firefox.internal.ProfilesIni;
 //import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class hover {
-ProfilesIni pr = new ProfilesIni();
-FirefoxProfile fp = pr.getProfile("SeleniumUser");
-FirefoxDriver driver = new FirefoxDriver(fp);
+
+FirefoxDriver driver = new FirefoxDriver();
 @Test
 public void hovertest() throws InterruptedException
 {

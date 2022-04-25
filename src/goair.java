@@ -1,4 +1,3 @@
-package practice;
 
 import java.util.List;
 //import java.util.concurrent.TimeUnit;
@@ -7,13 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
+//import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.testng.annotations.Test;
 
 public class goair {
-	ProfilesIni pr = new ProfilesIni();
+	org.openqa.selenium.firefox.ProfilesIni pr = new org.openqa.selenium.firefox.ProfilesIni();
 	FirefoxProfile fp = pr.getProfile("SeleniumUser");
-	FirefoxDriver driver = new FirefoxDriver(fp);
+	FirefoxDriver driver = new FirefoxDriver();
 	@Test
 	public void dropdown() throws InterruptedException
 	{

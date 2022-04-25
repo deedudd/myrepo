@@ -1,4 +1,4 @@
-package practice;
+
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -6,14 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
+
 
 public class dropdowncomp {
 public static void main(String[] args) throws InterruptedException
 {
-	ProfilesIni pr = new ProfilesIni();
-	FirefoxProfile fp = pr.getProfile("SeleniumUser");
-	FirefoxDriver driver = new FirefoxDriver(fp);
+	
+	FirefoxDriver driver = new FirefoxDriver();
 	driver.get("http://goair.in");
 	WebElement x = driver.findElement(By.xpath("//*[@id='departureCitysearchBoxUserControlCriteriaBox']"));
 	List<WebElement> dropdown1 = x.findElements(By.tagName("option"));
