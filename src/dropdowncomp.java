@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+// Main program
+
 
 public class dropdowncomp {
 public static void main(String[] args) throws InterruptedException
